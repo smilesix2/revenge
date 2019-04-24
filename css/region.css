@@ -1,0 +1,225 @@
+.region-page {
+    position: absolute;
+    z-index: 4000;
+    width: 100%;
+    background-color: #fff;
+    font-family: Arial, Helvetica, Sans-Serif;
+}
+
+.region-page-head {
+    position: fixed;
+    z-index: 4001;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background-color: rgb(57, 57, 60);
+    text-align: center;
+    color: #fff;
+}
+
+.region-page-head a {
+    position: absolute;
+    top: 6.5px;
+    left: 0;
+    height: 32px;
+    line-height: 32px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+    padding-left: 25px;
+    background-image: url(../images/arrow-back-white.png);
+    background-repeat: no-repeat;
+}
+
+.region-page ul {
+    list-style: none;
+    padding: 0 10px;
+    margin-top: 45px;
+    overflow-y: auto;
+}
+
+.region-page ul li {
+    position: relative;
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+.region-page ul li span {
+    position: absolute;
+    right: 0;
+    color: rgb(142, 142, 147)
+}
+
+.region-panel {
+    position: absolute;
+    z-index: 2;
+    width: 388px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .15);
+    font-size: 14px;
+    overflow-y: scroll;
+}
+
+.region-panel li {
+    list-style: none;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+/*add*/
+    .item-name{
+        position: relative;
+    }
+    .m-index .wrap .main .form .item .region-btn{
+        text-indent:9px;
+    }
+    .m-index .wrap .main .form .item .region-btn{
+        background: url(../../img/down.png) 45px 17px no-repeat;
+        cursor: pointer;
+    }
+    .floor{
+        position: absolute;
+        z-index: 100;
+        top: 50px;
+        left: 0px;
+        width: 140%;
+        padding:36px 15px 20px;
+        background-color: #fff;
+        color: #333;
+        border-radius: 8px;
+        font-size: 14px;
+        display:none;
+    }
+    .floor .close{
+        position: absolute;
+        top: 7px;
+        right: 10px;
+        display:block;
+        width: 30px;
+        height: 30px;
+        line-height:30px;
+        text-align:center;
+        font-size: 30px;
+        cursor: pointer;
+        color: #0094da;
+    }
+    .floor .tit{
+        position: relative;
+        width: 100%;
+        height: 20px;
+        overflow: hidden;
+    }   
+    .floor .tit div{
+        position: absolute;
+        z-index: 1;
+        top: 19px;
+        left: 0px;
+        width: 100%;
+        height:2px;
+        background-color:#999;
+    }
+    .floor .tit ul{
+        position: absolute;
+        z-index: 2;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 20px;
+        overflow: hidden;
+    }
+    .floor .tit li{
+        display:block;
+        float: left;
+        height: 18px;
+        margin-right: 22px;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+    }
+    .floor .tit li.act{
+        color: #0094da;
+        border-color: #0094da;
+    }
+    .floor .con{
+        width: 100%;
+        overflow: hidden;
+        min-height: 160px;
+        max-height: 500px;
+        padding-top: 10px;        
+    }
+    .floor .con div{
+        float: left;
+        width: 22%;
+        height: 22px;
+        margin-bottom: 8px;
+        line-height:22px;
+        cursor: pointer;
+        text-indent: 12px;
+    }
+    .floor .con span{
+        display:inline-block;
+        color:#a9a9a9;
+        text-indent: 4px;
+    }
+    .floor .con div:hover{
+        color: #fff;
+        background-color: #0094da;
+    }
+    .floor .con div:hover span{
+        color: #fff;
+    }
+    .floor .conOth{
+        min-height: 160px;
+        max-height: 500px;
+        overflow: auto;
+    }
+    .floor .conOth{
+        display:none;
+    }
+    .floor .conOth div{
+        width: 102%;
+        padding-top: 10px;
+        overflow: hidden;
+    }
+    .conOth div span,
+    .conOth div ul{
+        float: left;
+    }
+    .conOth div>span{
+        display:block;
+        width: 32px;
+        height: 22px;
+        line-height:22px;
+        text-align:center;
+        color: #e56700;
+    }
+    .conOth div ul{
+        width: 440px;
+        overflow: hidden;
+        line-height:22px;
+    }
+    .conOth div ul li{
+        float: left;
+        width: 130px;
+        text-indent: 12px;
+        cursor: pointer;
+    }
+    .conOth div ul li span:first-child{
+        margin-right:0px;        
+    }
+    .conOth div ul li span:last-child{
+        text-indent:4px;
+        color:#a9a9a9;
+    }
+    .conOth div ul li:hover{
+        color: #fff;
+        background-color: #0094da;
+    }
+    .conOth div ul li:hover span{
+        color: #fff;
+    }

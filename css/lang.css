@@ -1,0 +1,31 @@
+.lang-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 20px;
+    width: 46px;
+    z-index: 2;
+}
+
+.lang-btn span {
+    opacity: 0.4;
+    background-color: #202020;
+    height: 20px;
+    width: 46px;
+    display: block;
+    position: absolute;
+    top: 0;
+    border-radius: 3px;
+}
+
+.lang-btn a {
+    color: #fff;
+    position: absolute;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    text-align: center;
+    padding-left: 10px;
+    font-size: 12px;
+    text-decoration: none;
+}
