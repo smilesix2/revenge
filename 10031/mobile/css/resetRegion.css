@@ -1,0 +1,42 @@
+.mobileCon > div > span{
+    display:block;
+    height: 28px;
+    line-height: 28px;
+    color: #333;
+    text-indent: 20px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+}
+.mobileCon > div ul{
+    background-color: #fff;
+}
+.mobileCon > div li{
+    position: relative;
+    margin-left: 20px;
+    height: 50px;
+    line-height: 50px;
+    color: #4e5157;
+    text-indent: 0px;
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 15px;
+}
+.mobileCon > div li span:last-child{
+    position: absolute;
+    top: 0px;
+    right: 40px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-indent: 0px;
+    text-align: center;
+    color: #42b3df;
+}
+.m-login-box .form .item.item-phone .region-btn{
+    background: url(../img/down.png) 50px 17px no-repeat;
+    cursor: pointer;
+}
+.m-login-box .form .item.item-phone .region-btn{
+    text-indent: 5px;
+}

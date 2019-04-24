@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <![endif]-->
+    <title>宝安机场</title>
+    <meta name="description" content="宝安机场" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/authenticator.css">
+</head>
+<body>
+    <div class="m-index">
+        <div class="wrap">
+            <div class="top">
+                <div class="logo"></div>
+                <div class="btn-en"><a href="./boarding_pass_login_en.html">英文</a></div>
+            </div>
+            <div class="main">
+                <div class="msg-box">
+                    <div class="title">请输入登记信息进行认证</div>
+                    <form class="form">
+                        <div class="item item-seat">
+                            <input id="seatno" type="text" placeholder="座位号（如：16A，不区分大小写）">
+                        </div>
+                        <div class="item item-flight">
+                            <input id="fitno" type="text" placeholder="航班号（如：CA1234，不区分大小写）">
+                        </div>
+                        <div class="item item-number">
+                            <input id="passengerno" type="text" placeholder="您的购票证件号码后4位">
+                        </div>
+                        <div class="item item-check">
+                            <input id="terms_box" type="checkbox" checked="checked">
+                            <label>我已阅读机场<a href="javascript:void(0)">wifi使用条款</a></label>
+                        </div>
+                        <div class="btn-login btn-msg-login" id="login_btn">登录</div>
+                        <div class="btn-switch btn-switch-phone">
+                            <div class="inner"><a href="./phone_login.html">我想使用手机号码认证</a></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="advertising">
+                <img src="img/bottom.jpg" alt="">
+            </div>
+            <div class="bottom">
+                <p>版权所有：深圳宝安国际机场</p>
+                <p>Shenzhen Bao'an International Airport 2015 All Right Reserved </p>
+            </div>
+        </div>
+    </div>
+    <div class="m-float-clause">
+         <div class="inner">
+            <div class="title">使用条款</div>
+            <div class="content">
+                <p>本无线宽带上网服务是由深圳宝安国际机场（下称深圳机场）免费提供的无线上网服务，因此就该服务而言，使用者是深圳机场的客户。 </p>
+                <p>请阅读以下免费无线宽带上网服务的条款与细则，使用者须同意本服务条款与细则才可以享用本服务。 如果您不理解邀约邀请的含义和后果，请在请教他人后使用。</p>
+                <p>1.使用者使用本服务时必须登记真实的移动电话号码。使用者应务必保管好WIFI使用密码，深圳机场不会对非深圳机场原因造成的密码泄露负责。</p>
+                <p>2.您在使用本服务时应完全自行负责采取合适的安全手段保护您的隐私、个人信息及财产。 对于您的隐私或个人信息及财产因您使用无线上网服务而遭受的损失，深圳机场不承担任何责任。</p>
+                <p>3.使用者在使用本服务时应遵守中华人民共和国法律、法规、规章等相关规定，不得为任何非法目的使用本服务，不得使用本服务进行损害包括深圳机场在内的任何企业及个人的权利的行为。 司法或其它政府部门可能为执法目的要求深圳机场就披露用户信息提供协助。</p>
+                <p>4.此服务容许使用者透过任何支持Wi-Fi的手机、手提电脑或其他设备使用由深圳机场所提供的无线宽带网络登入互联网。</p>
+                <p>5.深圳机场有权随时修改或终止此服务。</p>
+                <p>6.使用者应清楚并同意以下事宜：</p>
+                <p>&nbsp;&nbsp;a.使用者应根据深圳机场制定的方法使用服务以及安装使用服务所需相关软件。</p>
+                <p>b.此服务的提供将会透露使用者当前所在地的资料，有关资料的使用及保存，均受深圳机场的标准隐私政策所限；</p>
+                <p>c.使用者可根据深圳机场所订立的条款，在指定的热点免费享用无线宽带上网服务；深圳机场有权在客户使用免费无线宽带上网服务期间加插广告；深圳机场有权利随时更改客户每天可享用的免费无线宽带上网服务时间；</p>
+                <p>d.深圳机场不会对使用无线网络以外的有关费用（包括但不限于任何由于暂停服务、无线上网连线终断以及服务质量而导致使用者的损失）承担责任；</p>
+                <p>e.深圳机场对于因使用者违规使用服务造成的使用者及第三方损失不承担责任，对于因不可抗力或者第三方行为导致的使用者及第三方损失亦不承担责任。</p>
+                <p>7.深圳机场不对服务质量、服务网络及安全作任何保证。若该服务受到深圳机场无法控制的因素影响，深圳机场在此表明保留权利终止此服务。</p>
+                <p>8.深圳机场不会收集用户传送的隐私或与其个人身份有关的信息。</p>
+            </div>
+            <div class="btn-close"></div>
+         </div>
+     </div>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    	<script src="../../js/jquery.cookie.js"></script>
+	<script src="../../js/authenticator.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/terms.js"></script>
+</body>
+</html>

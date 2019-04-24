@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <![endif]-->
+    <title>宝安机场</title>
+    <meta name="description" content="宝安机场" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/authenticator.css">
+</head>
+<body>
+    <div class="m-welcome">
+        <div class="top">
+            <div class="line1">
+                <div class="inner"></div>
+            </div>
+            <div class="line2">
+                <div class="inner"></div>
+            </div>
+            <div class="bubble1"></div>
+            <div class="bubble2"></div>
+        </div>
+        <div class="txt-bxo">
+            <p>欢迎登录深圳机场wifi</p>
+            <p>飞机即将抵达，请耐心等候！</p>
+        </div>
+        <div class="plane"></div>
+        <div class="bottom">
+            <div class="logo"></div>
+        </div>
+    </div>
+    <div class="m-index" style="opacity:0">
+        <div class="m-top">
+            <div class="logo"></div>
+            <div class="btn-en"><a href="./index_en.html">En</a></div>
+        </div>
+        <div class="index-box">
+            <div class="title">
+                <p>深圳机场欢迎您！</p>
+                <p>请选择wifi登录认证方式</p>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="select bording">
+                        <a href="./boarding_pass_login.html"></a>
+                        <div class="inner">
+                            <span class="i"></span>
+                            <span class="text">登机牌认证</span>
+                        </div>
+                    </div>
+                    <div class="select wx last">
+                        <a class="wechat-btn" href="javascript:void(0)"></a>
+                        <div class="inner">
+                            <span class="i"></span>
+                            <span class="text">微信认证</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row last">
+                    <div class="select msg">
+                        <a href="./phone_login.html"></a>
+                        <div class="inner">
+                            <span class="i"></span>
+                            <span class="text">短信认证</span>
+                        </div>
+                    </div>
+                    <div class="select app last" style="background-color: #808080; opacity: 0.5; border: 2px solid #cccccc;">
+                        <a href="javascript:void(0)"></a>
+                        <div class="inner">
+                            <span class="i"></span>
+                            <span class="text">App认证</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-advertising" style="background-image: url(img/bottom.jpg); background-position: center; background-size: cover"></div>
+    </div>
+    
+    <div class="m-float-load float-load-wx loader">
+        <div class="inner">
+            <div class="i-load"></div>
+            <div class="txt"></div>
+        </div>
+    </div>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/authenticator.js"></script>
+    <script src="../../js/jquery.md5.js"></script>
+    <script src="../../js/wechatutil.js"></script>
+    <script>
+        ;(function(){
+            var welcomeEl = $('.m-welcome');
+            var indexEl = $('.m-index');
+            var logoEl = welcomeEl.find('.logo');
+            var bottomEl = welcomeEl.find('.bottom');
+            
+            //var isAnimate = false;
+            var isAnimate = window.localStorage.isAnimate;
+            
+            //进入动画
+            var aniamteFn = function (){
+                welcomeEl.show();     
+                
+                var x = (welcomeEl.width() - 150)/2;
+                var y = (welcomeEl.height() - 71)/2;
+                //console.log(x,y);
+                
+                setTimeout(function(){
+                    welcomeEl.addClass('animate');
+                },100);
+                
+                bottomEl.on('webkitTransitionEnd',function(e){
+                    setTimeout(function(){
+                        welcomeEl.addClass('hide');
+                        logoEl.css({
+                            '-webkit-transform':'translate3d('+(-x)+'px, '+(-y)+'px, 0) scale(0.44)',
+                            '-webkit-transition': 'all 0.8s ease-out' 
+                        });
+                    },200);
+                    setTimeout(function(){
+                    welcomeEl.hide();
+                    },1600);
+                });
+            }
+            //判断是否加载过动画
+            if(!isAnimate) {
+                window.localStorage.isAnimate = true;   
+                aniamteFn();   
+            }else {
+                welcomeEl.hide();
+            }
+            indexEl.css({
+                'opacity':'1'
+            });    
+        })();
+    </script>
+    <script>
+    	$.authenticator.macAuth = false;
+    </script>
+</body>
+</html>
